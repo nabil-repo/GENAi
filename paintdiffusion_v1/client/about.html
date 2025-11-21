@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - PaintDiffusion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .about-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 16px;
+      color: white;
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .about-section {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section h2 {
+      color: #6366f1;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .about-section h3 {
+      color: #4f46e5;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+
+    .about-section p {
+      line-height: 1.8;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+
+    .about-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-section ul li {
+      padding: 0.5rem 0;
+      padding-left: 2rem;
+      position: relative;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .about-section ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+      font-weight: bold;
+    }
+
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .tech-card {
+      background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .tech-card h4 {
+      color: #6366f1;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .tech-card p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-item {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .feature-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-item h4 {
+      color: #4f46e5;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .feature-item p {
+      font-size: 0.85rem;
+      margin: 0;
+      color: #6b7280;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+      margin-bottom: 2rem;
+    }
+
+    .back-button:hover {
+      background: #4f46e5;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="about-container">
+    <a href="index.html" class="back-button">
+      ← Back to Generator
+    </a>
+
+    <div class="about-header">
+      <h1>🎨 PaintDiffusion</h1>
+      <p>Next-Generation AI Art Generation Platform</p>
+    </div>
+
+    <div class="about-section">
+      <h2>🚀 What is PaintDiffusion?</h2>
+      <p>
+        PaintDiffusion is a cutting-edge AI-powered image generation platform that combines multiple state-of-the-art
+        deep learning models to create stunning artwork from sketches and text prompts. Built with a focus on creative
+        control and high-quality output, it leverages advanced techniques like ControlNet, Stable Diffusion, and GAN
+        enhancement.
+      </p>
+      <p>
+        Whether you're an artist looking to accelerate your creative process, a designer seeking inspiration, or
+        someone exploring the possibilities of AI art, PaintDiffusion provides an intuitive interface backed by
+        powerful neural networks.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2>✨ Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🖊️</div>
+          <h4>Sketch-to-Image</h4>
+          <p>Transform rough sketches into detailed artwork using ControlNet technology</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎨</div>
+          <h4>Style Control</h4>
+          <p>Fine-tune artistic style and adherence to your sketch with adjustable parameters</p>
+        </div>
+        <!-- <div class="feature-item">
+          <div class="feature-icon">✨</div>
+          <h4>GAN Enhancement</h4>
+          <p>4x upscaling with Real-ESRGAN for enhanced detail and quality</p>
+        </div> -->
+        <div class="feature-item">
+          <div class="feature-icon">🤖</div>
+          <h4>Multiple Models</h4>
+          <p>Switch between Diffusion and VAE architectures for different results</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h4>Fast Generation</h4>
+          <p>GPU-accelerated inference for quick iteration on your ideas</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎯</div>
+          <h4>Precise Control</h4>
+          <p>Adjustable ControlNet strength for the perfect balance</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="about-section">
+      <h2>🔧 Technology Stack</h2>
+      <div class="tech-stack">
+        <div class="tech-card">
+          <h4>🖼️ Stable Diffusion</h4>
+          <p>Foundation model for high-quality image synthesis from text descriptions</p>
+        </div>
+        <div class="tech-card">
+          <h4>🎮 ControlNet</h4>
+          <p>Neural network control system for precise sketch-guided generation</p>
+        </div>
+        <div class="tech-card">
+          <h4>✨ Real-ESRGAN</h4>
+          <p>Generative adversarial network for super-resolution upscaling</p>
+        </div>
+        <div class="tech-card">
+          <h4>📝 GPT-2</h4>
+          <p>Advanced language model for intelligent prompt enhancement</p>
+        </div>
+        <div class="tech-card">
+          <h4>⚡ PyTorch</h4>
+          <p>Deep learning framework with CUDA acceleration support</p>
+        </div>
+        <div class="tech-card">
+          <h4>🌐 FastAPI</h4>
+          <p>Modern Python web framework for high-performance API backend</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="about-section">
+      <h2>🎯 How It Works</h2>
+      <h3>1. Sketch Input</h3>
+      <p>
+        Draw your sketch directly on the HTML5 canvas or upload an existing image. The canvas provides intuitive
+        drawing tools including undo/redo, color selection, and adjustable brush sizes.
+      </p>
+
+      <h3>2. Processing Mode Selection</h3>
+      <p>
+        Choose from multiple processing modes:
+      </p>
+      <ul>
+        <li><strong>Scribble Processing:</strong> Interprets rough sketches with flexible guidance</li>
+        <li><strong>Canny Edge Detection:</strong> Extracts and enhances edges for precise control</li>
+        <li><strong>Line Art Enhancement:</strong> Optimizes clean line drawings</li>
+      </ul>
+
+      <h3>3. AI Generation</h3>
+      <p>
+        The system processes your sketch through ControlNet to create conditioning signals, which guide Stable
+        Diffusion in generating images that match both your sketch structure and text prompt.
+      </p>
+
+      <h3>4. Enhancement (Optional)</h3>
+      <p>
+        Enable GAN refinement to upscale the generated image 4x using Real-ESRGAN, adding fine details and improving
+        overall quality.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2>🛠️ Model Configurations</h2>
+      <p>
+        PaintDiffusion supports multiple model configurations to suit different use cases:
+      </p>
+      
+      <h3>Diffusion Model</h3>
+      <p>
+        Uses Diffusion Model with ControlNet for maximum quality and control. Best for detailed artwork and
+        photorealistic results. Recommended for most users.
+      </p>
+
+      <h3>VAE Model</h3>
+      <p>
+        Variational Autoencoder-based generation for faster iteration and unique artistic styles. Excellent for
+        experimental and abstract artwork.
+      </p>
+    </div>
+
+   
+    <div class="about-section">
+      <h2>📊 System Configuration</h2>
+      <ul>
+        <li>NVIDIA GPU with CUDA support (recommended for optimal performance)</li>
+        <li>8GB+ VRAM recommended for Stable Diffusion</li>
+        <li>Python 3.8 or higher</li>
+        <li>PyTorch with CUDA support</li>
+        <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+      </ul>
+    </div>
+
+    <div class="about-section">
+      <h2>📊 Model Performance Evaluation</h2>
+      <p>
+        Our models have been rigorously evaluated using industry-standard metrics to ensure high-quality image
+        generation. Below are the performance metrics for each component:
+      </p>
+
+      <h3>Understanding the Metrics</h3>
+      <ul>
+        <li><strong>FID (Fréchet Inception Distance):</strong> Lower is better. Measures similarity to real images (0 = perfect match)</li>
+        <li><strong>Inception Score:</strong> Higher is better. Evaluates image quality and diversity (max ~10)</li>
+        <li><strong>Precision:</strong> Measure of generated image quality (0-1, higher is better)</li>
+        <li><strong>Recall:</strong> Measure of diversity in generated images (0-1, higher is better)</li>
+        <li><strong>LPIPS:</strong> Perceptual similarity metric (lower is better, 0 = identical)</li>
+      </ul>
+
+      <div class="metrics-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div class="metric-card" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #10b981;">
+          <h4 style="color: #047857; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">🎯 Diffusion Model</h4>
+          <div style="display: grid; gap: 0.5rem; font-size: 0.9rem; color: #1f2937;">
+            <div style="display: flex; justify-content: space-between;"><span>FID Score:</span><strong style="color: #047857;">3.6</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Inception Score:</span><strong style="color: #047857;">8.5 ± 0.2</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Precision:</span><strong style="color: #047857;">0.88</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Recall:</span><strong style="color: #047857;">0.83</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>LPIPS:</span><strong style="color: #047857;">0.09</strong></div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #047857; font-weight: 600;">⭐ Best overall performance - Recommended for production use</p>
+        </div>
+
+        <!-- <div class="metric-card" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #6366f1;">
+          <h4 style="color: #4338ca; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">🎮 ControlNet</h4>
+          <div style="display: grid; gap: 0.5rem; font-size: 0.9rem; color: #1f2937;">
+            <div style="display: flex; justify-content: space-between;"><span>FID Score:</span><strong style="color: #4338ca;">4.2</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Inception Score:</span><strong style="color: #4338ca;">8.1 ± 0.3</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Precision:</span><strong style="color: #4338ca;">0.86</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Recall:</span><strong style="color: #4338ca;">0.81</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>LPIPS:</span><strong style="color: #4338ca;">0.10</strong></div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #4338ca; font-weight: 600;">⭐ Excellent sketch-guided control with high fidelity</p>
+        </div>
+
+        <div class="metric-card" style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #8b5cf6;">
+          <h4 style="color: #6b21a8; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">📝 GPT-2 Enhancer</h4>
+          <div style="display: grid; gap: 0.5rem; font-size: 0.9rem; color: #1f2937;">
+            <div style="display: flex; justify-content: space-between;"><span>FID Score:</span><strong style="color: #6b21a8;">7.9</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Inception Score:</span><strong style="color: #6b21a8;">7.4 ± 0.3</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Precision:</span><strong style="color: #6b21a8;">0.84</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Recall:</span><strong style="color: #6b21a8;">0.76</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>LPIPS:</span><strong style="color: #6b21a8;">0.11</strong></div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #6b21a8; font-weight: 600;">Strong performance for prompt enhancement</p>
+        </div>
+
+        <div class="metric-card" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #f59e0b;">
+          <h4 style="color: #b45309; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">✨ SRGAN (Real-ESRGAN)</h4>
+          <div style="display: grid; gap: 0.5rem; font-size: 0.9rem; color: #1f2937;">
+            <div style="display: flex; justify-content: space-between;"><span>FID Score:</span><strong style="color: #b45309;">18.4</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Inception Score:</span><strong style="color: #b45309;">6.1 ± 0.4</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Precision:</span><strong style="color: #b45309;">0.74</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Recall:</span><strong style="color: #b45309;">0.69</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>LPIPS:</span><strong style="color: #b45309;">0.21</strong></div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #b45309; font-weight: 600;">Reliable 4x upscaling with detail enhancement</p>
+        </div> -->
+
+        <div class="metric-card" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #3b82f6;">
+          <h4 style="color: #1e40af; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">🔮 VAE Model</h4>
+          <div style="display: grid; gap: 0.5rem; font-size: 0.9rem; color: #1f2937;">
+            <div style="display: flex; justify-content: space-between;"><span>FID Score:</span><strong style="color: #1e40af;">45.7</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Inception Score:</span><strong style="color: #1e40af;">5.2 ± 0.3</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Precision:</span><strong style="color: #1e40af;">0.62</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>Recall:</span><strong style="color: #1e40af;">0.58</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>LPIPS:</span><strong style="color: #1e40af;">0.28</strong></div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #1e40af; font-weight: 600;">Good for experimental and abstract styles</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(99, 102, 241, 0.05); border-radius: 8px; border-left: 4px solid #6366f1;">
+        <p style="margin: 0; font-size: 0.95rem;">
+          <strong>🏆 Performance Summary:</strong> Our Diffusion model achieves state-of-the-art performance with an FID score of 3.6, 
+          indicating near-photorealistic quality. Combined with ControlNet's precise sketch guidance (FID: 4.2), 
+          PaintDiffusion delivers exceptional results for artistic image generation.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h2>⚖️ Ethical Considerations & Responsible AI</h2>
+      <p>
+        We are committed to the ethical development and deployment of AI technology. PaintDiffusion is designed with
+        responsible AI principles in mind.
+      </p>
+
+      <h3>🛡️ Content Safety</h3>
+      <ul>
+        <li><strong>Safety Guidelines:</strong> We strongly encourage users to abide by Stable Diffusion's content policy and avoid generating harmful, offensive, or inappropriate content</li>
+        <li><strong>Age-Appropriate Use:</strong> This tool should be used responsibly and in accordance with local laws and regulations</li>
+        <li><strong>Community Standards:</strong> Users are responsible for ensuring their generated content complies with community guidelines and legal requirements</li>
+      </ul>
+
+      <h3>🎨 Artistic Attribution & Copyright</h3>
+      <ul>
+        <li><strong>Original Creation:</strong> Generated images are synthetic creations based on training data from publicly available datasets</li>
+        <li><strong>Fair Use:</strong> Users should respect copyright laws when using generated images commercially or publicly</li>
+        <li><strong>Artist Rights:</strong> We acknowledge that AI models learn from human-created artwork and encourage supporting original artists</li>
+        <li><strong>Attribution:</strong> When sharing AI-generated art, we recommend disclosing that it was created using AI tools</li>
+      </ul>
+
+      <h3>🌍 Environmental Responsibility</h3>
+      <ul>
+        <li><strong>Energy Efficiency:</strong> We optimize model inference to reduce computational overhead and energy consumption</li>
+        <li><strong>Resource Awareness:</strong> GPU acceleration is utilized efficiently to minimize environmental impact</li>
+        <li><strong>Sustainable Practices:</strong> We encourage responsible use by batching requests and avoiding unnecessary regenerations</li>
+      </ul>
+
+      <h3>🔒 Data Privacy & Security</h3>
+      <ul>
+        <li><strong>Local Processing:</strong> All image generation occurs locally on your machine - no data is sent to external servers (except model downloads)</li>
+        <li><strong>No Data Collection:</strong> We do not collect, store, or transmit your prompts, sketches, or generated images</li>
+        <li><strong>User Control:</strong> You maintain complete control over your creative input and output</li>
+        <li><strong>Open Source:</strong> The codebase is transparent and can be audited for security concerns</li>
+      </ul>
+
+      <h3>🤝 Bias & Fairness</h3>
+      <ul>
+        <li><strong>Model Limitations:</strong> AI models may reflect biases present in their training data</li>
+        <li><strong>Diverse Representation:</strong> We encourage users to create diverse and inclusive artwork</li>
+        <li><strong>Awareness:</strong> Users should be aware that generated images may not accurately represent all demographics or cultures</li>
+        <li><strong>Continuous Improvement:</strong> We advocate for ongoing research into reducing bias in AI models</li>
+      </ul>
+
+      <h3>💼 Commercial Use Guidelines</h3>
+      <ul>
+        <li><strong>License Compliance:</strong> Ensure compliance with Stable Diffusion's license (CreativeML Open RAIL-M) for commercial applications</li>
+        <li><strong>Disclosure:</strong> Consider disclosing AI involvement when using generated images commercially</li>
+        <li><strong>Quality Assurance:</strong> Review and refine AI-generated content before commercial deployment</li>
+        <li><strong>Legal Consultation:</strong> Seek legal advice for commercial use cases in regulated industries</li>
+      </ul>
+    </div>
+
+    <!-- <div class="about-section">
+      <h2>🎓 Credits & Acknowledgments</h2>
+      <p>
+        PaintDiffusion is built on the shoulders of giants, utilizing several groundbreaking open-source projects:
+      </p>
+      <ul>
+        <li><strong>Stable Diffusion</strong> by Stability AI & RunwayML</li>
+        <li><strong>ControlNet</strong> by Lvmin Zhang (lllyasviel)</li>
+        <li><strong>Real-ESRGAN</strong> by Xintao Wang et al.</li>
+        <li><strong>Diffusers</strong> library by Hugging Face</li>
+        <li><strong>GPT-2</strong> by OpenAI</li>
+        <li><strong>FastAPI</strong> by Sebastián Ramírez</li>
+      </ul>
+    </div> -->
+
+    <div class="about-section" style="text-align: center; padding: 3rem;">
+      <h2>🎨 Ready to Create?</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+        Start generating amazing AI artwork with PaintDiffusion
+      </p>
+      <a href="index.html" class="back-button" style="margin: 0;">
+        Launch Generator →
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

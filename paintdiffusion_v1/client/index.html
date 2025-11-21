@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaintDiffusion - AI Art Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="header-content">
+        <h1>🎨 PaintDiffusion</h1>
+        <p class="tagline">AI-Powered Sketch-to-Image Generation with ControlNet</p>
+      </div>
+      <a href="about.html" class="about-link" title="Learn more about PaintDiffusion">About</a>
+      <!-- <div class="status-indicator" id="serverStatus">
+        <span class="status-dot"></span>
+        <span class="status-text">Checking connection...</span>
+      </div> -->
+    </header>
+
+    <input type="hidden" id="serverUrl" value="http://localhost:8000">
+    <input type="hidden" id="steps" value="30">
+    <input type="hidden" id="cfg" value="5.0">
+    <input type="hidden" id="seed" value="">
+    <input type="hidden" id="useGanRefiner" type="checkbox">
+
+    <div class="control-section full-width">
+      <label class="control-label">
+        <span class="label-icon">✏️</span>
+        <span class="label-text">Your Creative Prompt</span>
+      </label>
+      <textarea id="prompt"
+        placeholder="Describe your vision... e.g., sunset over a cyberpunk city in watercolor, highly detailed"
+        rows="3"></textarea>
+      <div class="prompt-hints">
+        <span class="hint-chip">💡 Be descriptive</span>
+        <span class="hint-chip">🎨 Mention style</span>
+        <span class="hint-chip">✨ Add details</span>
+      </div>
+    </div>
+
+
+    <div class="controls">
+
+      <div class="control-section model-selector-section" style="margin-top: 2%;">
+        <h3 class="section-title">
+          <span class="section-icon">🤖</span>
+          Model Configuration
+        </h3>
+        <div class="model-selectors">
+          <div class="input-group">
+            <label class="control-label">Select Model</label>
+            <select id="modelCategory" class="styled-select">
+              <option value="Diffusion">Diffusion</option>
+              <option value="VAE">VAE</option>
+              <!-- <option value="Transformer">Transformer</option>
+              <option value="GAN">GAN</option> -->
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="control-section gan-refiner-controls">
+        <h3 class="section-title">
+          <span class="section-icon">✨</span>
+          Enhancement Options
+        </h3>
+        <label class="checkbox-label">
+          <input type="checkbox" id="useGanRefiner">
+          <span class="checkbox-text">Enable GAN Refiner (4x upscaling + detail enhancement)</span>
+        </label>
+        <div id="ganModelInfo" class="gan-model-info"></div>
+        <button id="btnRefreshGanInfo" type="button" class="btn-ghost">🔄 Refresh Status</button>
+      </div> -->
+
+      <!-- <div class="control-section generation-params">
+        <h3 class="section-title">
+          <span class="section-icon">⚙️</span>
+          Generation Parameters
+        </h3>
+        <div class="params-grid">
+          <div class="input-group">
+            <label class="control-label">Steps</label>
+            <input id="steps" type="number" value="30" min="1" max="150" class="styled-input">
+            <span class="input-hint">Recommended: 20-50</span>
+          </div>
+          <div class="input-group">
+            <label class="control-label">CFG Scale</label>
+            <input id="cfg" type="number" value="7.0" step="0.5" min="0" max="20" class="styled-input">
+            <span class="input-hint">Recommended: 7-12</span>
+          </div>
+          <div class="input-group">
+            <label class="control-label">Seed (optional)</label>
+            <input id="seed" type="number" placeholder="Random seed" class="styled-input">
+            <span class="input-hint">For reproducibility</span>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="canvas-controls-wrapper">
+        <div class="sketch-canvas card">
+          <div class="card-header">
+            <h4>🖊️ Drawing Canvas</h4>
+            <div class="canvas-tools">
+              <button id="btnUndo" class="tool-btn" title="Undo">↶</button>
+              <button id="btnRedo" class="tool-btn" title="Redo">↷</button>
+              <input type="color" id="colorPicker" value="#ffffff" class="color-picker" title="Brush Color">
+              <input type="range" id="brushSize" min="1" max="20" value="3" class="brush-slider" title="Brush Size">
+            </div>
+          </div>
+          <div class="canvas-container">
+            <canvas id="sketch" width="512" height="512"></canvas>
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px; gap: 5%;">
+              <button id="btnClear" type="button" class="btn-ghost">🗑️ Clear Canvas</button>
+              <button id="btnDownloadSketch" type="button" class="btn-secondary">💾 Download Sketch</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls-panel">
+          <div class="control-section sketch-controls">
+            <h3 class="section-title">
+              <span class="section-icon">🖌️</span>
+              Sketch Control
+            </h3>
+            <div class="sketch-options">
+              <div class="input-group">
+                <label class="control-label">Processing Mode</label>
+                <select id="sketchType" class="styled-select" default="scribble">
+                  <option value="scribble">Scribble Processing</option>
+                  <option value="canny">Canny Edge Detection</option>
+                  <option value="lineart">Line Art Enhancement</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label class="control-label">
+                  ControlNet Strength
+                  <span class="strength-value" id="controlnetStrengthValue">1.0</span>
+                </label>
+                <input id="controlnetStrength" type="range" min="0" max="2" step="0.1" value="1.0" class="styled-range">
+                <div class="range-labels">
+                  <span>0.0</span>
+                  <span>1.0</span>
+                  <span>2.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="sketch-upload">
+              <label class="file-upload-btn">
+                <span class="upload-icon">📁</span>
+                <span>Upload Sketch Image</span>
+                <input type="file" id="sketchUpload" accept="image/*" style="display: none;">
+              </label>
+              <button id="btnProcessSketch" type="button" class="btn-secondary" style="display: none;">👁️ Preview
+                Processing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button id="btnGenerate" class="btn-primary">
+          <span class="btn-icon">🚀</span>
+          <span>Generate Image</span>
+        </button>
+        <button id="btnDownload" class="btn-secondary" style="display: none;">💾 Download Result</button>
+      </div>
+    </div>
+
+    <div class="workspace">
+      <div class="processed-preview card" id="processedPreview" style="display: none;">
+        <div class="card-header">
+          <h4>🔍 Processed Control</h4>
+        </div>
+        <img id="processedSketch" alt="processed control image" />
+        <div class="processing-info" id="processingInfo"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 
+  <div id="promptEnhancementResult" class="prompt-result" style="display: none;">
+    <h3>Enhanced Prompt</h3>
+    <div id="enhancedPromptText"></div>
+    <button id="btnUseEnhanced">Use Enhanced Prompt</button>
+  </div> -->
+  <!-- 
+  <div id="promptVariationsResult" class="prompt-result" style="display: none;">
+    <h3>Prompt Variations</h3>
+    <div id="variationsList"></div>
+  </div> -->
+
+  <div class="output">
+    <!-- <div id="generationInfo" class="generation-info" style="display: none;"></div> -->
+    <div class="results-grid">
+      <div class="result-card card" id="resultContainer" style="display: none;">
+        <div class="card-header">
+          <h3>🎨 Generated Image</h3>
+          <button id="btnDownloadOriginal" class="download-btn">💾 Download</button>
+        </div>
+        <div class="image-wrapper">
+          <img id="result" alt="Generated image will appear here" />
+          <div class="image-loading">
+            <div class="spinner"></div>
+            <p>Creating your masterpiece...</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="result-card card" id="refinedContainer" style="display: none;">
+        <div class="card-header">
+          <h3>✨ Enhanced (4x GAN)</h3>
+          <button id="btnDownloadRefined" class="download-btn">💾 Download</button>
+        </div>
+        <div class="image-wrapper">
+          <img id="refinedResult" alt="Enhanced result will appear here" />
+        </div>
+      </div> -->
+      <div class="result-card card" id="controlImageContainer" style="display: none;">
+        <div class="card-header">
+          <h3>🔍 Control Image</h3>
+          <button id="btnDownloadSketch" class="download-btn">💾 Download</button>
+        </div>
+        <div class="image-wrapper">
+          <img id="controlImageResult" alt="Control image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

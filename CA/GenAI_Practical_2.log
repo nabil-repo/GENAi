@@ -1,0 +1,2575 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.10.18)  13 NOV 2025 15:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./GenAI_Practical_2.ipynb
+(GenAI_Practical_2.ipynb
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   "
+       cells": [
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4       "cell_
+                type": "markdown",
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+! You can't use `macro parameter character #' in math mode.
+l.9         "#
+               **Experiment No.2 Autoencoders and Variational Autoencoders (...
+
+? 
+! Undefined control sequence.
+l.9 ...ders and Variational Autoencoders (VAE)**\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.10         "\n
+                ",
+? 
+! Undefined control sequence.
+l.11 ... Dimensionality Reduction and Denoising.\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.12 ...s in entertainment and design using VAE.\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.13         "\n
+                ",
+? 
+! Undefined control sequence.
+<recently read> \n 
+                   
+l.14         "**Name:- Nabil Ansari** \\\n
+                                          ",
+? 
+! Undefined control sequence.
+<recently read> \n 
+                   
+l.15         "**Batch :- GAA Lab 3** \\\n
+                                         ",
+? 
+! Undefined control sequence.
+<recently read> \n 
+                   
+l.16         "**PRN:- 202302040004** \\\n
+                                         ",
+? 
+! Extra }, or forgotten $.
+l.19     }
+          ,
+? 
+! You can't use `macro parameter character #' in math mode.
+l.26         "#
+                1. Build a simple AE model for Dimensionality Reduction and ...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.32         "id": "rq1XbOE__
+                             Jmj"
+? 
+! Undefined control sequence.
+l.35         "---\n
+                   ",
+? 
+! Undefined control sequence.
+l.36         "\n
+                ",
+? 
+! Undefined control sequence.
+l.37         "**1️. What an Autoencoder Is**\n
+                                              ",
+? 
+! Undefined control sequence.
+l.38         "\n
+                ",
+? 
+! Undefined control sequence.
+l.39 ... compressed intermediate representation.\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.40         "\n
+                ",
+? 
+! Undefined control sequence.
+l.41         "It has two main parts:\n
+                                      ",
+? 
+! Undefined control sequence.
+l.42         "\n
+                ",
+? 
+! Undefined control sequence.
+l.43 ...                                       |\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.44 ...-------------------------------------- |\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.45 ...nt vector** (dimensionality reduction) |\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.46 ...atent vector                           |\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.47         "\n
+                ",
+? 
+! Undefined control sequence.
+l.48         "---\n
+                   ",
+? 
+! Undefined control sequence.
+l.49         "\n
+                ",
+? 
+! Undefined control sequence.
+l.50         "**2️. Dimensionality Reduction**\n
+                                                ",
+? 
+! Undefined control sequence.
+l.51         "\n
+                ",
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.52 ..."* The encoder transforms an input image $
+                                                  x$ into a latent vector $z...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.52 ..."* The encoder transforms an input image $
+                                                  x$ into a latent vector $z...
+
+? 
+Missing character: There is no ️ in font cmmi10!
+Missing character: There is no ️ in font cmmi10!
+Missing character: There is no x in font nullfont!
+Missing character: There is no z in font nullfont!
+! Undefined control sequence.
+l.52 ... much lower dimension than the original.\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.53 ...efficient representation** of the input.\n
+                                                  ",
+? 
+Missing character: There is no z in font nullfont!
+! Undefined control sequence.
+l.54 ...can then use this latent vector $z$ for:\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.55         "\n
+                ",
+? 
+! Undefined control sequence.
+l.56         "  * Feature extraction\n
+                                      ",
+? 
+! Undefined control sequence.
+l.57         "  * Visualization (with PCA/t-SNE)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.58         "  * Feeding into other models\n
+                                             ",
+? 
+! Undefined control sequence.
+l.59         "\n
+                ",
+? 
+! Undefined control sequence.
+l.60         "Example:\n
+                        ",
+? 
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+l.61 ... → encoded into a 64-dimensional vector.\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.62         "\n
+                ",
+? 
+! Undefined control sequence.
+l.63         "---\n
+                   ",
+? 
+! Undefined control sequence.
+l.64         "\n
+                ",
+? 
+! Undefined control sequence.
+l.65         "**3️. Denoising**\n
+                                 ",
+? 
+! Undefined control sequence.
+l.66         "\n
+                ",
+? 
+Missing character: There is no → in font cmr10!
+Missing character: There is no ️ in font cmmi10!
+Missing character: There is no x in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.67 ... the **noisy version** of the input as $x_
+                                                  \\text{noisy}$ but ask the...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.67 ...he **noisy version** of the input as $x_\\
+                                                  text{noisy}$ but ask the m...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.67 ...ersion** of the input as $x_\\text{noisy}$
+                                                   but ask the model to outp...
+
+? 
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.67 ...odel to output the **clean version** $x_\\
+                                                  text{clean}$.\n",
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.67 ...ut the **clean version** $x_\\text{clean}$
+                                                  .\n",
+? 
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.67 ...the **clean version** $x_\\text{clean}$.\n
+                                                  ",
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.68 ...nly the **signal** and ignore the noise.\n
+                                                  ",
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.69 ...es and the AE outputs denoised versions.\n
+                                                  ",
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no " in font nullfont!
+! Undefined control sequence.
+l.70         "\n
+                ",
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+! Undefined control sequence.
+l.71         "---\n
+                   "
+? 
+Missing character: There is no " in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.75       "cell_
+                 type": "markdown",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.80         "#
+               ## Setup\n",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.80         "##
+                # Setup\n",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.80         "###
+                  Setup\n",
+? 
+! Undefined control sequence.
+l.80         "### Setup\n
+                         ",
+? 
+! Undefined control sequence.
+l.81         "\n
+                ",
+? 
+! Extra }, or forgotten $.
+l.84     }
+          ,
+? 
+! Undefined control sequence.
+l.100 ...l/lib/python3.12/dist-packages (2.19.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.101 ...al/lib/python3.12/dist-packages (4.9.9)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.102 ...dist-packages (from tensorflow) (1.4.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.103 ...dist-packages (from tensorflow) (1.6.3)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.104 ...st-packages (from tensorflow) (25.9.23)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.105 ...dist-packages (from tensorflow) (0.6.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.106 ...dist-packages (from tensorflow) (0.2.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.107 ...ist-packages (from tensorflow) (18.1.1)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.108 ...dist-packages (from tensorflow) (3.4.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.109 .../dist-packages (from tensorflow) (25.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.110 ...ist-packages (from tensorflow) (5.29.5)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.111 ...ist-packages (from tensorflow) (2.32.4)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.112 ...ist-packages (from tensorflow) (75.2.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.113 ...ist-packages (from tensorflow) (1.17.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.114 ...dist-packages (from tensorflow) (3.2.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.115 ...ist-packages (from tensorflow) (4.15.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.116 ...dist-packages (from tensorflow) (2.0.1)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.117 ...ist-packages (from tensorflow) (1.76.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.118 ...ist-packages (from tensorflow) (2.19.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.119 ...ist-packages (from tensorflow) (3.10.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.120 ...dist-packages (from tensorflow) (2.0.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.121 ...ist-packages (from tensorflow) (3.15.1)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.122 ...dist-packages (from tensorflow) (0.5.3)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.123 ...ages (from tensorflow-datasets) (0.8.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.124 ...ages (from tensorflow-datasets) (0.1.9)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 125.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+25.
+(C:\Users\Nabil\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Warning: Command \" invalid in math mode on input line 125.
+
+LaTeX Font Info:    Trying to load font information for +lmr on input line 125.
+
+LaTeX Font Info:    No file lmr.fd. on input line 125.
+LaTeX Font Info:    Trying to load font information for +cmr on input line 125.
+
+LaTeX Font Info:    No file cmr.fd. on input line 125.
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 125.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 125.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.125 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 125.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.125 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.125 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 125.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 125.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.125 ...tree]>=1.9.1; python_version >= \"3.11\"-
+                                                  >tensorflow-datasets) (1.1...
+
+? 
+! Undefined control sequence.
+l.125 ...\"3.11\"->tensorflow-datasets) (1.13.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.126 ...ages (from tensorflow-datasets) (4.2.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.127 ...ckages (from tensorflow-datasets) (2.3)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.128 ...ages (from tensorflow-datasets) (5.9.5)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.129 ...ges (from tensorflow-datasets) (18.1.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.130 ...ages (from tensorflow-datasets) (0.1.7)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.131 ...ges (from tensorflow-datasets) (1.17.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.132 ...ges (from tensorflow-datasets) (0.10.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.133 ...ges (from tensorflow-datasets) (4.67.1)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.134 ...astunparse>=1.6.0->tensorflow) (0.45.1)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 135.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.135 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 135.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.135 ...tree]>=1.9.1; python_version >= \"3.11\"-
+                                                  >tensorflow-datasets) (0.8...
+
+? 
+! Undefined control sequence.
+l.135 ... \"3.11\"->tensorflow-datasets) (0.8.1)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 136.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.136 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 136.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.136 ...tree]>=1.9.1; python_version >= \"3.11\"-
+                                                  >tensorflow-datasets) (202...
+
+? 
+! Undefined control sequence.
+l.136 ...3.11\"->tensorflow-datasets) (2025.3.0)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 137.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.137 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 137.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.137 ...tree]>=1.9.1; python_version >= \"3.11\"-
+                                                  >tensorflow-datasets) (6.5...
+
+? 
+! Undefined control sequence.
+l.137 ... \"3.11\"->tensorflow-datasets) (6.5.2)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 138.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.138 ...,epy,etree]>=1.9.1; python_version >= \"3
+                                                  .11\"->tensorflow-datasets...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 138.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.138 ...tree]>=1.9.1; python_version >= \"3.11\"-
+                                                  >tensorflow-datasets) (3.2...
+
+? 
+! Undefined control sequence.
+l.138 ...\"3.11\"->tensorflow-datasets) (3.23.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.139 ...from keras>=3.5.0->tensorflow) (13.9.4)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.140 ...(from keras>=3.5.0->tensorflow) (0.1.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.141 ...from keras>=3.5.0->tensorflow) (0.17.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.142 ...equests<3,>=2.21.0->tensorflow) (3.4.4)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.143 ...requests<3,>=2.21.0->tensorflow) (3.11)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.144 ...equests<3,>=2.21.0->tensorflow) (2.5.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.145 ...sts<3,>=2.21.0->tensorflow) (2025.10.5)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.146 ...tensorboard~=2.19.0->tensorflow) (3.10)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.147 ...ensorboard~=2.19.0->tensorflow) (0.7.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.148 ...ensorboard~=2.19.0->tensorflow) (3.1.3)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.149 ... dm-tree->tensorflow-datasets) (25.4.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.150 ..._parsing->tensorflow-datasets) (0.17.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.151 ...metadata->tensorflow-datasets) (1.72.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.152 ...ensorboard~=2.19.0->tensorflow) (3.0.3)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.153 ...rich->keras>=3.5.0->tensorflow) (4.0.0)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.154 ...ich->keras>=3.5.0->tensorflow) (2.19.2)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.155 ...rich->keras>=3.5.0->tensorflow) (0.1.2)\n
+                                                  "
+? 
+! Undefined control sequence.
+l.179 .../tensorflow/tf-keras-datasets/mnist.npz\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180             "\u0
+                      01b[1m11490434/11490434\u001b[0m \u001b[32m━━━━━━━━━━━...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.180             "\u0
+                      01b[1m11490434/11490434\u001b[0m \u001b[32m━━━━━━━━━━━...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180             "\u001b[1m11490434/11490434\u0
+                                                01b[0m \u001b[32m━━━━━━━━━━━...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ... "\u001b[1m11490434/11490434\u001b[0m \u0
+                                                  01b[32m━━━━━━━━━━━━━━━━━━━...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ...001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u0
+                                                  01b[0m\u001b[37m\u001b[0m ...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ...u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u0
+                                                  01b[37m\u001b[0m \u001b[1m...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ...━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u0
+                                                  01b[0m \u001b[1m0s\u001b[0...
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ...━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u0
+                                                  01b[1m0s\u001b[0m 0us/step\n"
+
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 180.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.180 ...001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u0
+                                                  01b[0m 0us/step\n"
+? 
+! Undefined control sequence.
+l.180 ...\u001b[0m \u001b[1m0s\u001b[0m 0us/step\n
+                                                  "
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186               "<pre style=\"w
+                                   hite-space:pre;overflow-x:auto;line-heigh...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.186               "<pre style=\"w
+                                   hite-space:pre;overflow-x:auto;line-heigh...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186 ...Mono',consolas,'Courier New',monospace\">
+                                                  <span style=\"font-weight:...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186 ...'Courier New',monospace\"><span style=\"f
+                                                  ont-weight: bold\">Model: ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186 ...pace\"><span style=\"font-weight: bold\">
+                                                  Model: \"functional\"</spa...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186 ...an style=\"font-weight: bold\">Model: \"f
+                                                  unctional\"</span>\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 186.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.186 ...ont-weight: bold\">Model: \"functional\"<
+                                                  /span>\n",
+? 
+! Undefined control sequence.
+l.186 ...ht: bold\">Model: \"functional\"</span>\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.187               "</pre>\n
+                             "
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 190.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.190               "\u0
+                        01b[1mModel: \"functional\"\u001b[0m\n"
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 190.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.190               "\u001b[1mModel: \"f
+                                        unctional\"\u001b[0m\n"
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 190.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+
+LaTeX Warning: Command \u invalid in math mode on input line 190.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.190 ...        "\u001b[1mModel: \"functional\"\u
+                                                  001b[0m\n"
+? 
+! Undefined control sequence.
+l.190 ...\u001b[1mModel: \"functional\"\u001b[0m\n
+                                                  "
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 199.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 199.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.199               "<pre style=\"w
+                                   hite-space:pre;overflow-x:auto;line-heigh...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.199               "<pre style=\"w
+                                   hite-space:pre;overflow-x:auto;line-heigh...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 199.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.199 ...Mono',consolas,'Courier New',monospace\">
+                                                  ┏━━━━━━━━━━━━━━━━━━━━━━━━━...
+
+? 
+! Undefined control sequence.
+l.199 ...━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200               "┃<span style=\"f
+                                     ont-weight: bold\"> Layer (type)       ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200 ...     "┃<span style=\"font-weight: bold\">
+                                                   Layer (type)             ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200 ...                  </span>┃<span style=\"f
+                                                  ont-weight: bold\"> Output...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200 .../span>┃<span style=\"font-weight: bold\">
+                                                   Output Shape           </...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200 ...t Shape           </span>┃<span style=\"f
+                                                  ont-weight: bold\">       ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.200 .../span>┃<span style=\"font-weight: bold\">
+                                                         Param # </span>┃\n",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.200 ...tyle=\"font-weight: bold\">       Param #
+                                                   </span>┃\n",
+? 
+! Undefined control sequence.
+l.200 ...-weight: bold\">       Param # </span>┃\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.201 ...━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...          "│ input_layer (<span style=\"c
+                                                  olor: #0087ff; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...   "│ input_layer (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">InputLayer</span>...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...0087ff; text-decoration-color: #0087ff\">
+                                                  InputLayer</span>)        ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...utLayer</span>)        │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...</span>)        │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">28</span>, <span ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...00af00; text-decoration-color: #00af00\">
+                                                  28</span>, <span style=\"c...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...lor: #00af00\">28</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...0af00\">28</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">28</span>, <span ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...00af00; text-decoration-color: #00af00\">
+                                                  28</span>, <span style=\"c...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...lor: #00af00\">28</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...0af00\">28</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">1</span>)      │ ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...00af00; text-decoration-color: #00af00\">
+                                                  1</span>)      │          ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...span>)      │             <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ...     │             <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.202 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">0</span> │\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 202.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.202 ...00af00; text-decoration-color: #00af00\">
+                                                  0</span> │\n",
+? 
+! Undefined control sequence.
+l.202 ...-decoration-color: #00af00\">0</span> │\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.203 ...──────────────────────┼───────────────┤\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204               "│ conv2d (<span style=\"c
+                                              olor: #0087ff; text-decoration...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ...        "│ conv2d (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">Conv2D</span>)   ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...0087ff; text-decoration-color: #0087ff\">
+                                                  Conv2D</span>)            ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...span>)                 │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ...                │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">28</span>, <span ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...00af00; text-decoration-color: #00af00\">
+                                                  28</span>, <span style=\"c...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...lor: #00af00\">28</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ...0af00\">28</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">28</span>, <span ...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...00af00; text-decoration-color: #00af00\">
+                                                  28</span>, <span style=\"c...
+
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...lor: #00af00\">28</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+
+? 
+! You can't use `macro parameter character #' in math mode.
+l.204 ...0af00\">28</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+
+? ＀＀＀＀＀＀q
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? W
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? Q
+OK, entering \batchmode...
+
+! Interruption.
+<to be read again> 
+                   0
+l.204 ...af00\">28</span>, <span style=\"color: #0
+                                                  0af00; text-decoration-col...
+
+? Q
+OK, entering \batchmode...
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">32</span>)     │ ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...00af00; text-decoration-color: #00af00\">
+                                                  32</span>)     │          ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...2</span>)     │           <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.204 ...>)     │           <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.204 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">320</span> │\n",
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 204.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.204 ...00af00; text-decoration-color: #00af00\">
+                                                  320</span> │\n",
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Undefined control sequence.
+l.204 ...ecoration-color: #00af00\">320</span> │\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.205 ...──────────────────────┼───────────────┤\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...        "│ max_pooling2d (<span style=\"c
+                                                  olor: #0087ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ... "│ max_pooling2d (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">MaxPooling2D</spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...0087ff; text-decoration-color: #0087ff\">
+                                                  MaxPooling2D</span>)    │ ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...axPooling2D</span>)    │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ...ng2D</span>)    │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">14</span>, <span ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...00af00; text-decoration-color: #00af00\">
+                                                  14</span>, <span style=\"c...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...lor: #00af00\">14</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ...0af00\">14</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">14</span>, <span ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...00af00; text-decoration-color: #00af00\">
+                                                  14</span>, <span style=\"c...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...lor: #00af00\">14</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ...0af00\">14</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">32</span>)     │ ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...00af00; text-decoration-color: #00af00\">
+                                                  32</span>)     │          ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 .../span>)     │             <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ...     │             <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.206 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">0</span> │\n",
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 206.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.206 ...00af00; text-decoration-color: #00af00\">
+                                                  0</span> │\n",
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Undefined control sequence.
+l.206 ...-decoration-color: #00af00\">0</span> │\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.207 ...──────────────────────┼───────────────┤\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208               "│ conv2d_1 (<span style=\"c
+                                                olor: #0087ff; text-decorati...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...      "│ conv2d_1 (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">Conv2D</span>)   ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...0087ff; text-decoration-color: #0087ff\">
+                                                  Conv2D</span>)            ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...</span>)               │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...)               │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">14</span>, <span ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...00af00; text-decoration-color: #00af00\">
+                                                  14</span>, <span style=\"c...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...lor: #00af00\">14</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...0af00\">14</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">14</span>, <span ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...00af00; text-decoration-color: #00af00\">
+                                                  14</span>, <span style=\"c...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...lor: #00af00\">14</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...0af00\">14</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">64</span>)     │ ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...00af00; text-decoration-color: #00af00\">
+                                                  64</span>)     │        <s...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...">64</span>)     │        <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ...pan>)     │        <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">18,496</span> │\n",
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 208.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.208 ...00af00; text-decoration-color: #00af00\">
+                                                  18,496</span> │\n",
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Undefined control sequence.
+l.208 ...ration-color: #00af00\">18,496</span> │\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.209 ...──────────────────────┼───────────────┤\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...      "│ max_pooling2d_1 (<span style=\"c
+                                                  olor: #0087ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...│ max_pooling2d_1 (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">MaxPooling2D</spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...0087ff; text-decoration-color: #0087ff\">
+                                                  MaxPooling2D</span>)  │ (<...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...>MaxPooling2D</span>)  │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...ling2D</span>)  │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">7</span>, <span s...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...00af00; text-decoration-color: #00af00\">
+                                                  7</span>, <span style=\"co...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...olor: #00af00\">7</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...00af00\">7</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">7</span>, <span s...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...00af00; text-decoration-color: #00af00\">
+                                                  7</span>, <span style=\"co...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...olor: #00af00\">7</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...00af00\">7</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">64</span>)       ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...00af00; text-decoration-color: #00af00\">
+                                                  64</span>)       │        ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...pan>)       │             <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ...     │             <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.210 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">0</span> │\n",
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.210 ...00af00; text-decoration-color: #00af00\">
+                                                  0</span> │\n",
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Undefined control sequence.
+l.210 ...-decoration-color: #00af00\">0</span> │\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.211 ...──────────────────────┼───────────────┤\n
+                                                  ",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212               "│ flatten (<span style=\"c
+                                               olor: #0087ff; text-decoratio...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ...       "│ flatten (<span style=\"color: #
+                                                  0087ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ..."color: #0087ff; text-decoration-color: #
+                                                  0087ff\">Flatten</span>)  ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...0087ff; text-decoration-color: #0087ff\">
+                                                  Flatten</span>)           ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...</span>)               │ (<span style=\"c
+                                                  olor: #00d7ff; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ...)               │ (<span style=\"color: #
+                                                  00d7ff; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ..."color: #00d7ff; text-decoration-color: #
+                                                  00d7ff\">None</span>, <spa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...00d7ff; text-decoration-color: #00d7ff\">
+                                                  None</span>, <span style=\...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...r: #00d7ff\">None</span>, <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ...7ff\">None</span>, <span style=\"color: #
+                                                  00af00; text-decoration-co...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ..."color: #00af00; text-decoration-color: #
+                                                  00af00\">3136</span>)     ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...00af00; text-decoration-color: #00af00\">
+                                                  3136</span>)           │  ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 212.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.212 ...)           │             <span style=\"c
+                                                  olor: #00af00; text-decora...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `macro parameter character #' in math mode.
+l.212 ...     │             <span style=\"color: #
+                                                  00af00; text-decoration-co...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 75 strings out of 409617
+ 1381 string characters out of 5774012
+ 1965191 words of memory out of 5000000
+ 22251 multiletter control sequences out of 15000+600000
+ 561012 words of font info for 37 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 24i,11n,32p,552b,134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+No pages of output.

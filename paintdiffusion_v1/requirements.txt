@@ -1,0 +1,22 @@
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.8.2
+pillow==10.4.0
+numpy==2.1.0
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.41.0
+diffusers>=0.30.0
+accelerate>=0.30.0
+safetensors>=0.4.3
+# Optional helpers for ControlNet edge/depth maps
+controlnet-aux>=0.0.8
+# Real-ESRGAN for GAN-based image super-resolution
+GANModel>=0.3.0
+opencv-python>=4.8.0
+basicsr>=1.4.2
+
+# Optional accelerators for faster Hugging Face model downloads (silences Xet warning)
+hf_xet
+# Optional: parallel transfer accelerator (can further speed up large file downloads)
+hf_transfer

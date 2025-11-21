@@ -1,0 +1,5 @@
+.vscode/
+/training/training_outputs/
+
+# Ignore Python cache files
+__pycache__/
