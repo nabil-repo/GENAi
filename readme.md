@@ -1,4 +1,4 @@
-# PaintDiffusion
+#GenAI Submissions and Pintdiffusion Project
 
 > Name: Nabil Ansari
 > PRN: 202302040004
